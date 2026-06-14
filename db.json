@@ -1,0 +1,215 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "email": "admin@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "Aita GUEYE",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "client@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "Coach Aly",
+      "role": "client"
+    },
+    {
+      "email": "modou@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "modou",
+      "role": "mareyeur",
+      "id": 3
+    },
+    {
+      "email": "mohidine",
+      "motdepasse": "mohidine",
+      "nom": "mohidine",
+      "role": "client",
+      "id": 4
+    },
+    {
+      "email": "azer",
+      "motdepasse": "azer",
+      "nom": "azer",
+      "role": "mareyeur",
+      "id": 5
+    },
+    {
+      "email": "bathie@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "BATHIE",
+      "role": "mareyeur",
+      "id": 6
+    },
+    {
+      "email": "toto@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "toto",
+      "role": "mareyeur",
+      "id": 7
+    },
+    {
+      "email": "tata@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "tata",
+      "role": "client",
+      "id": 8
+    }
+  ],
+  "produits": [
+    {
+      "nom": "seude",
+      "prix": 1500,
+      "id": 9
+    },
+    {
+      "nom": "crevet",
+      "prix": 2500,
+      "id": 10
+    },
+    {
+      "nom": "crevette",
+      "prix": 1200,
+      "id": 11
+    }
+  ],
+  "transactions": [
+    {
+      "client": "aita",
+      "produit": "yarang",
+      "quantite": 2,
+      "prix": 1200,
+      "total": 2400,
+      "date": "13/06/2026",
+      "id": 15,
+      "statut": "Livrée"
+    },
+    {
+      "client": "aita",
+      "produit": "mereug",
+      "quantite": 11,
+      "prix": 1400,
+      "total": 15400,
+      "date": "13/06/2026",
+      "id": 16,
+      "statut": "Livrée"
+    },
+    {
+      "client": "Demba",
+      "produit": "YABOY",
+      "quantite": 20,
+      "prix": 12000,
+      "total": 240000,
+      "date": "13/06/2026",
+      "id": 17,
+      "statut": "Livrée"
+    },
+    {
+      "client": "Demba",
+      "produit": "seude",
+      "quantite": 30,
+      "prix": 1500,
+      "total": 45000,
+      "date": "13/06/2026",
+      "id": 18,
+      "statut": "Livrée"
+    },
+    {
+      "client": "aita",
+      "produit": "seude",
+      "quantite": 2,
+      "prix": 1500,
+      "total": 3000,
+      "date": "14/06/2026",
+      "id": 20,
+      "statut": "Livrée"
+    },
+    {
+      "client": "tata",
+      "produit": "yarang",
+      "quantite": 2,
+      "prix": 1200,
+      "total": 2400,
+      "date": "14/06/2026",
+      "id": 21,
+      "statut": "Livrée"
+    },
+    {
+      "client": "diop",
+      "produit": "mereug",
+      "quantite": 2,
+      "prix": 1400,
+      "total": 2800,
+      "date": "14/06/2026",
+      "id": 22,
+      "statut": "Livrée"
+    },
+    {
+      "client": "awa",
+      "produit": "seude",
+      "quantite": 2,
+      "prix": 1500,
+      "total": 3000,
+      "date": "14/06/2026",
+      "id": 23,
+      "statut": "Livrée"
+    }
+  ],
+  "paniers": [
+    {
+      "produit": "Yakh",
+      "quantite": 2,
+      "prix": 2000,
+      "id": 1
+    },
+    {
+      "produit": "Thiof",
+      "quantite": 12,
+      "prix": 3500,
+      "id": 2
+    }
+  ],
+  "stocks": [
+    {
+      "id": 1,
+      "nom": "Thiof",
+      "disponible": 200
+    },
+    {
+      "id": 2,
+      "nom": "Yakh",
+      "disponible": 150
+    },
+    {
+      "id": 3,
+      "nom": "Capitaine",
+      "disponible": 0
+    },
+    {
+      "id": 4,
+      "nom": "Carpe",
+      "disponible": 130
+    },
+    {
+      "id": 5,
+      "nom": "Sole",
+      "disponible": 252
+    },
+    {
+      "nom": "mereug",
+      "disponible": 0,
+      "id": 6
+    },
+    {
+      "nom": "yarang",
+      "disponible": 22314,
+      "id": 7
+    },
+    {
+      "nom": "crevette",
+      "disponible": 60,
+      "id": 8
+    }
+  ]
+}
