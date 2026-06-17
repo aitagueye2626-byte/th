@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.avec-fond {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.15)), url('Gemini_Generated_Image_2pedub2pedub2ped.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#dashboardAdmin,
+#dashboardClient,
+#pageConnexion,
+#app {
+  background: transparent !important;
+}
+
+#app, #dashboardAdmin {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cache {
+  display: none !important;
+}
+
+.aita {
+  display: flex;
+  height: 100vh;
+}
+
+.aita-gauche {
+  width: 55%;
+  position: relative;
+  background: linear-gradient(135deg, #1e3a8a, #1565c0);
+  overflow: hidden;
+}
+
+.aita-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.aita-nom {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  letter-spacing: 1px;
+}
+
+.aita-droite {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 80px;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+}
+
+.logo-zone {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.logo-cercle {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  box-shadow: 0 4px 10px rgba(21, 101, 192, 0.4);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 12px auto;
+  color: white;
+}
+
+.nom-app {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1565c0;
+  letter-spacing: 0.5px;
+}
+
+.titre-connexion {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.sous-titre-connexion {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+.champ {
+  margin-bottom: 22px;
+}
+
+.champ label {
+  display: block;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.champ input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+.champ input:focus {
+  border-color: #1565c0;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(21, 101, 192, 0.15);
+}
+
+.erreur {
+  display: none;
+  color: #b91c1c;
+  font-size: 14px;
+  margin-bottom: 16px;
+  background: #fef2f2;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #ef4444;
+  font-weight: 500;
+}
+
+.bouton-connexion {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bouton-connexion:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(21, 101, 192, 0.4);
+}
+
+.barre-navigation {
+  background: rgba(15, 23, 42, 0.5) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.logo-barre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.menu-barre {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-barre button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.menu-barre button:hover {
+  background: #facc15;
+  color: #0f172a;
+  border-color: #facc15;
+}
+
+.mise-en-page {
+  display: flex;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+.barre-laterale {
+  width: 240px;
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 30px 0;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.element-menu {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s;
+}
+
+.element-menu:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.element-menu.actif {
+  background: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff;
+  border-radius: 0 8px 8px 0;
+}
+
+.contenu {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.titre-page, h1, h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: white !important; 
+  margin-bottom: 24px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.metriques, 
+.contenu > div:first-of-type:has(.metrique),
+div[style*="display: grid"] {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important; 
+  gap: 20px !important;
+  margin-bottom: 32px !important;
+  width: 100% !important;
+}
+
+.metrique, .metrique-stock, div[style*="display: grid"] > div {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px !important;
+  padding: 22px 20px !important; 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  min-height: 110px !important;
+  width: 100% !important;
+}
+
+.metrique .etiquette, .metrique span:first-child, div[style*="display: grid"] > div span:first-child {
+  font-size: 12px !important;
+  color: #475569 !important; 
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.metrique .valeur, .metrique h3, .metrique p, div[style*="display: grid"] > div h3, div[style*="display: grid"] > div p {
+  font-size: 28px !important;
+  font-weight: 850 !important;
+  color: #1e3a8a !important; 
+  line-height: 1.1 !important;
+}
+
+div[style*="background-color"] {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.metrique-stock .etiquette, div[style*="background-color"] span {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+.metrique-stock .valeur, div[style*="background-color"] p {
+  color: #ffffff !important;
+}
+
+.section-tableau, 
+.contenu > div:has(table),
+div:has(> table) {
+  background: rgba(255, 255, 255, 0.88) !important; 
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px !important;
+  padding: 28px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  margin-top: 20px !important;
+  margin-bottom: 32px !important;
+}
+
+.section-tableau h2, div:has(> table) h2 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  text-shadow: none !important;
+  margin-bottom: 20px !important;
+}
+
+table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+thead th {
+  padding: 14px 16px !important;
+  background-color: rgba(241, 245, 249, 0.7) !important;
+  color: #334155 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  border-bottom: 2px solid rgba(226, 232, 240, 0.8) !important;
+  text-align: left !important;
+}
+
+thead th:first-child { border-top-left-radius: 8px; }
+thead th:last-child { border-top-right-radius: 8px; }
+
+tbody td {
+  padding: 14px 16px !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5) !important;
+  color: #1e293b !important;
+  font-size: 14px !important;
+}
+
+tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(248, 250, 252, 0.4) !important;
+}
+
+tbody tr:hover {
+  background-color: rgba(240, 253, 244, 0.8) !important; 
+}
+
+.section-tableau form, 
+div:has(form) form,
+div[style*="display: flex"]:has(input) {
+  display: flex !important;
+  width: 100% !important;
+  gap: 16px !important; 
+  align-items: center !important;
+}
+
+.section-tableau form input,
+div:has(form) form input,
+.input-admin,
+div[style*="display: flex"]:has(input) input {
+  flex: 1 !important; 
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  background-color: white !important;
+  font-size: 14px;
+}
+
+.section-tableau form button,
+div:has(form) form button,
+.btn-ajouter,
+div[style*="display: flex"]:has(input) button {
+  flex-shrink: 0 !important;
+  padding: 12px 35px !important; 
+}
+
+.totaux, div:has(> #montantGeneral) {
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  margin-top: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.badge-statut {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.statut-dispo   { background: #dcfce7; color: #166534; }
+.statut-alerte  { background: #ffedd5; color: #9a3412; }
+.statut-rupture { background: #fee2e2; color: #991b1b; }
+
+.btn-stock-add, .btn-stock-remove {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-stock-add { background: #dcfce7; color: #166534; margin-right: 6px; }
+.btn-stock-remove { background: #fee2e2; color: #991b1b; }
+
+.btn-modifier, .btn-supprimer, .btn-ajouter {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-modifier { background: #e0f2fe; color: #0369a1; padding: 8px 14px; margin-right: 8px; }
+.btn-supprimer { background: #fee2e2; color: #991b1b; padding: 8px 14px; }
+.btn-ajouter {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: white;
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.2);
+}
+#formuConnexion form,
+#formuInscription form {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+}
+
+#formuConnexion .champ,
+#formuInscription .champ {
+  width: 100% !important;
+}
+
+#formuConnexion .champ input,
+#formuInscription .champ input,
+#formuConnexion select,
+#formuInscription select {
+  width: 100% !important;
+}
+
+
+
+/* --- RESPONSIVE ADAPTATION --- */
+
+/* 1. Sur Tablettes (écrans < 1024px) */
+@media screen and (max-width: 1024px) {
+  .metriques, 
+  div[style*="display: grid"] {
+    grid-template-columns: repeat(2, 1fr) !important; /* Passe à 2 colonnes */
+  }
+}
+
+/* 2. Sur Mobiles (écrans < 768px) */
+@media screen and (max-width: 768px) {
+  /* Mise en page connexion */
+  .aita { flex-direction: column; }
+  .aita-gauche { width: 100%; height: 250px; }
+  .aita-droite { width: 100%; padding: 40px 20px; }
+  
+  /* Sur mobile, on repasse à un défilement normal de toute la page */
+  html, body {
+    overflow: auto;
+  }
+  .mise-en-page {
+    height: auto;
+    overflow: visible;
+    flex-direction: column;
+  }
+  .barre-laterale {
+    width: 100%;
+    padding: 10px;
+    overflow-y: visible;
+  }
+  .element-menu { padding: 10px; justify-content: center; }
+  
+  /* Grille des métriques devient 1 colonne */
+  .metriques, 
+  div[style*="display: grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Rendre le tableau scrollable */
+  .table-container, .section-tableau {
+    overflow-x: auto;
+    padding: 15px !important;
+  }
+  
+  /* Formulaires empilés */
+  .section-tableau form {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+  
+  .section-tableau form button {
+    width: 100%;
+  }
+}
+
+/* 3. Ajustement du conteneur principal */
+@media screen and (max-width: 480px) {
+  .contenu { padding: 20px 10px; }
+  .titre-page, h1 { font-size: 20px !important; }
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

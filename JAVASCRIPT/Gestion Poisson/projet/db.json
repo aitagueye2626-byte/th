@@ -1,0 +1,513 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "email": "admin@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "Aita GUEYE",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "client@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "Coach Aly",
+      "role": "client"
+    },
+    {
+      "email": "modou@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "modou",
+      "role": "mareyeur",
+      "id": 3
+    },
+    {
+      "email": "mohidine",
+      "motdepasse": "mohidine",
+      "nom": "mohidine",
+      "role": "client",
+      "id": 4
+    },
+    {
+      "email": "azer",
+      "motdepasse": "azer",
+      "nom": "azer",
+      "role": "mareyeur",
+      "id": 5
+    },
+    {
+      "email": "bathie@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "BATHIE",
+      "role": "mareyeur",
+      "id": 6
+    },
+    {
+      "email": "toto@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "toto",
+      "role": "mareyeur",
+      "id": 7
+    },
+    {
+      "email": "tata@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "tata",
+      "role": "client",
+      "id": 8
+    },
+    {
+      "email": "ta@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "ta",
+      "role": "client",
+      "id": 9
+    },
+    {
+      "email": "taa@senthiof.sn",
+      "motdepasse": "1234",
+      "nom": "taa",
+      "role": "mareyeur",
+      "id": 10
+    }
+  ],
+  "produits": [
+    {
+      "nom": "Thiof",
+      "prix": 4000,
+      "id": 1
+    },
+    {
+      "nom": "Yakh",
+      "prix": 2000,
+      "id": 2
+    },
+    {
+      "nom": "Capitaine",
+      "prix": 2200,
+      "id": 3
+    },
+    {
+      "nom": "Carpe",
+      "prix": 1800,
+      "id": 4
+    },
+    {
+      "nom": "Sole",
+      "prix": 2800,
+      "id": 5
+    },
+    {
+      "nom": "Mereug",
+      "prix": 1400,
+      "id": 6
+    },
+    {
+      "nom": "Yarang",
+      "prix": 1200,
+      "id": 7
+    },
+    {
+      "nom": "Seude",
+      "prix": 1500,
+      "id": 8
+    },
+    {
+      "nom": "Crevette",
+      "prix": 4500,
+      "id": 9
+    },
+    {
+      "nom": "Sardinelle",
+      "prix": 800,
+      "id": 11
+    },
+    {
+      "nom": "Maquereau",
+      "prix": 1100,
+      "id": 12
+    },
+    {
+      "nom": "Barracuda",
+      "prix": 2600,
+      "id": 13
+    },
+    {
+      "nom": "Dorade",
+      "prix": 3000,
+      "id": 14
+    },
+    {
+      "nom": "Mérou",
+      "prix": 4000,
+      "id": 15
+    },
+    {
+      "nom": "Langouste",
+      "prix": 8000,
+      "id": 16
+    },
+    {
+      "nom": "Poulpe",
+      "prix": 2000,
+      "id": 17
+    },
+    {
+      "nom": "Calamars",
+      "prix": 2300,
+      "id": 18
+    },
+    {
+      "nom": "Pagre",
+      "prix": 2700,
+      "id": 19
+    },
+    {
+      "nom": "Daurade",
+      "prix": 3200,
+      "id": 20
+    },
+    {
+      "nom": "Mulet",
+      "prix": 1300,
+      "id": 21
+    },
+    {
+      "nom": "Requin",
+      "prix": 1600,
+      "id": 22
+    },
+    {
+      "nom": "Raie",
+      "prix": 1400,
+      "id": 23
+    },
+    {
+      "nom": "Tilapia",
+      "prix": 1000,
+      "id": 24
+    },
+    {
+      "nom": "Silure",
+      "prix": 900,
+      "id": 25
+    },
+    {
+      "nom": "Yett",
+      "prix": 15000,
+      "id": 26
+    }
+  ],
+  "transactions": [
+    {
+      "client": "aita",
+      "produit": "yarang",
+      "quantite": 2,
+      "prix": 1200,
+      "total": 2400,
+      "date": "13/06/2026",
+      "id": 15,
+      "statut": "Annulée"
+    },
+    {
+      "client": "aita",
+      "produit": "mereug",
+      "quantite": 11,
+      "prix": 1400,
+      "total": 15400,
+      "date": "13/06/2026",
+      "id": 16,
+      "statut": "Annulée"
+    },
+    {
+      "client": "Demba",
+      "produit": "YABOY",
+      "quantite": 20,
+      "prix": 12000,
+      "total": 240000,
+      "date": "13/06/2026",
+      "id": 17,
+      "statut": "Livrée"
+    },
+    {
+      "client": "Demba",
+      "produit": "seude",
+      "quantite": 30,
+      "prix": 1500,
+      "total": 45000,
+      "date": "13/06/2026",
+      "id": 18,
+      "statut": "Livrée"
+    },
+    {
+      "client": "aita",
+      "produit": "seude",
+      "quantite": 2,
+      "prix": 1500,
+      "total": 3000,
+      "date": "14/06/2026",
+      "id": 20,
+      "statut": "Annulée"
+    },
+    {
+      "client": "tata",
+      "produit": "yarang",
+      "quantite": 2,
+      "prix": 1200,
+      "total": 2400,
+      "date": "14/06/2026",
+      "id": 21,
+      "statut": "Livrée"
+    },
+    {
+      "client": "diop",
+      "produit": "mereug",
+      "quantite": 2,
+      "prix": 1400,
+      "total": 2800,
+      "date": "14/06/2026",
+      "id": 22,
+      "statut": "Livrée"
+    },
+    {
+      "client": "awa",
+      "produit": "seude",
+      "quantite": 2,
+      "prix": 1500,
+      "total": 3000,
+      "date": "14/06/2026",
+      "id": 23,
+      "statut": "Livrée"
+    },
+    {
+      "client": "Coach Aly",
+      "produit": "Thiof",
+      "quantite": 5,
+      "prix": 3500,
+      "total": 17500,
+      "date": "17/06/2026",
+      "statut": "En attente",
+      "id": 24
+    },
+    {
+      "client": "Coach Aly",
+      "produit": "Thiof",
+      "quantite": 5,
+      "prix": 3500,
+      "total": 17500,
+      "date": "17/06/2026",
+      "statut": "En attente",
+      "id": 25
+    },
+    {
+      "client": "Coach Aly",
+      "clientEmail": "client@senthiof.sn",
+      "produit": "Poulpe",
+      "quantite": 3,
+      "prix": 2000,
+      "total": 6000,
+      "date": "17/06/2026",
+      "statut": "En attente",
+      "id": 26
+    },
+    {
+      "client": "Coach Aly",
+      "clientEmail": "client@senthiof.sn",
+      "produit": "Langouste",
+      "quantite": 7,
+      "prix": 8000,
+      "total": 56000,
+      "date": "17/06/2026",
+      "statut": "En attente",
+      "id": 27
+    },
+    {
+      "client": "ta",
+      "clientEmail": "ta@senthiof.sn",
+      "produit": "Langouste",
+      "quantite": 6,
+      "prix": 8000,
+      "total": 48000,
+      "date": "17/06/2026",
+      "statut": "En attente",
+      "id": 28
+    }
+  ],
+  "paniers": [
+    {
+      "produit": "Yakh",
+      "quantite": 2,
+      "prix": 2000,
+      "id": 1
+    },
+    {
+      "produit": "Thiof",
+      "quantite": 12,
+      "prix": 3500,
+      "id": 2
+    },
+    {
+      "produit": "Yaboy",
+      "quantite": 2,
+      "prix": 1000,
+      "id": 3
+    },
+    {
+      "produit": "Capitaine",
+      "quantite": 12,
+      "prix": 2000,
+      "id": 4
+    },
+    {
+      "produit": "Meureug",
+      "quantite": 2,
+      "prix": 2000,
+      "id": 5
+    },
+    {
+      "produit": "Crevette",
+      "quantite": 12,
+      "prix": 3000,
+      "id": 6
+    },
+    {
+      "produit": "talare",
+      "quantite": 2,
+      "prix": 2000,
+      "id": 7
+    },
+    {
+      "produit": "Carpe",
+      "quantite": 12,
+      "prix": 1500,
+      "id": 8
+    }
+  ],
+  "stocks": [
+    {
+      "id": 1,
+      "nom": "Thiof",
+      "disponible": 200
+    },
+    {
+      "id": 2,
+      "nom": "Yakh",
+      "disponible": 150
+    },
+    {
+      "id": 3,
+      "nom": "Capitaine",
+      "disponible": 80
+    },
+    {
+      "id": 4,
+      "nom": "Carpe",
+      "disponible": 130
+    },
+    {
+      "id": 5,
+      "nom": "Sole",
+      "disponible": 252
+    },
+    {
+      "id": 6,
+      "nom": "Mereug",
+      "disponible": 60
+    },
+    {
+      "id": 7,
+      "nom": "Yarang",
+      "disponible": 400
+    },
+    {
+      "id": 8,
+      "nom": "Seude",
+      "disponible": 50
+    },
+    {
+      "id": 9,
+      "nom": "Crevette",
+      "disponible": 90
+    },
+    {
+      "id": 10,
+      "nom": "Crevet",
+      "disponible": 70
+    },
+    {
+      "id": 11,
+      "nom": "Sardinelle",
+      "disponible": 500
+    },
+    {
+      "id": 12,
+      "nom": "Maquereau",
+      "disponible": 300
+    },
+    {
+      "id": 13,
+      "nom": "Barracuda",
+      "disponible": 45
+    },
+    {
+      "id": 14,
+      "nom": "Dorade",
+      "disponible": 120
+    },
+    {
+      "id": 15,
+      "nom": "Mérou",
+      "disponible": 30
+    },
+    {
+      "id": 16,
+      "nom": "Langouste",
+      "disponible": 20
+    },
+    {
+      "id": 17,
+      "nom": "Poulpe",
+      "disponible": 85
+    },
+    {
+      "id": 18,
+      "nom": "Calamars",
+      "disponible": 110
+    },
+    {
+      "id": 19,
+      "nom": "Pagre",
+      "disponible": 95
+    },
+    {
+      "id": 20,
+      "nom": "Daurade",
+      "disponible": 75
+    },
+    {
+      "id": 21,
+      "nom": "Mulet",
+      "disponible": 180
+    },
+    {
+      "id": 22,
+      "nom": "Requin",
+      "disponible": 40
+    },
+    {
+      "id": 23,
+      "nom": "Raie",
+      "disponible": 55
+    },
+    {
+      "id": 24,
+      "nom": "Tilapia",
+      "disponible": 220
+    },
+    {
+      "id": 25,
+      "nom": "Silure",
+      "disponible": 160
+    }
+  ]
+}
